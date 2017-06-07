@@ -19,6 +19,12 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="2/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+    <script src="2/thumbnail-slider.js" type="text/javascript"></script>
+    <link href="css/install.css" rel="stylesheet">
+     <script src="js/install.js" type="text/javascript"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,11 +40,35 @@
     font-size: 0.7em;
     text-align:center ;
 }
+
+    .video-section .pattern-overlay {
+background-color: #ADD8E6;
+padding: 20px 0 20px;
+min-height: 20px; 
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:      #4169E1;
+}
+.video-section h1{
+font-size:40px;
+font-family:1  fantasy;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
 </style>
 
 </head>
 
-<bodY style="background: #B0E0E6">
+<bodY style="background:        #ADD8E6">
 
    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -128,72 +158,83 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
+    <section class="content-section video-section">
+  <div class="pattern-overlay">
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=fdJc1_IBKJA',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}"></a>
     <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+       <h1> <img src="12.png" width="80px">Open Source Softawre Ensi Club<img src="12.png" width="80px"></h1>  
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<br>
+
+<div class="container">
+  <div class="row transparent" style="background:   #4682B4">
+    <div class="col-md-12">
+          <div class="tuyin first" style="margin-left: 14px"> 
+            <span class="title" style="color: #2F4F4F"><b>Install Party Linux</b></span>
+             <div class="plan-name"></div>
+              <div class="text">
+                <p><strong>You want to reinstall your computer with a stable and free system? We have a solution for you!
+In partnership with CSI, we suggest you install a free and open distribution of GNU/Linux.
+GNU / Linux users will be there to help you install this powerful but Free and Open system !</strong></p>
+              </div>
+           
+          </div>
+        
+
+    <!-- Page Content -->
+  
 
         <!-- Page Heading/Breadcrumbs -->
-         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header" style="text-align: center"> <img src="InPL.png" width="200px"> <strong style="color:#152588" ><span style="font-size:50px">Install Party Linux </span></strong><img src="InPL.png"  width="200px">
-                </h1>              
-            </div>
-        </div>
-        <!-- /.row -->
-        <br>
-         <h1 style="text-align: center" style="color: yellow"> <b>Think Open , think free!<b> </h1>
-        <p style="text-align: center"> <strong>You want to reinstall your computer with a stable and free system? We have a solution for you!<br>
-In partnership with CSI, we suggest you install a free and open distribution of GNU/Linux.
-GNU / Linux users will be there to help you install this powerful but Free and Open system !</strong> </p>
-        <br>
-        
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-6 img-portfolio">
-            
-                    <img class="img-responsive img-hover" src="Install1.jpg" alt="" >
-               
-                
-            </div>
-            <div class="col-md-6 img-portfolio">
-               
-                    <img class="img-responsive img-hover" src="install2.jpg" alt="">
-               
-              
-            </div>
-        </div>
-        <!-- /.row -->
+     
+     
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-6 img-portfolio">
-               
-                    <img class="img-responsive img-hover" src="install3.jpg" alt="">
-                
-               
-            </div>
-            <div class="col-md-6 img-portfolio">
-             
-                    <img class="img-responsive img-hover" src="inst.jpg" alt="">
-               
+
+
+ <div style="padding:120px 0;">
+        <div id="thumbnail-slider">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a class="thumb" href="Install1.jpg" />
+                    </li>
+                    <li>
+                        <a class="thumb" href="install2.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="install3.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="inst.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="install5.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="install6.jpg"></a>
+                    </li>
+                   
+                </ul>
             </div>
         </div>
-        <!-- /.row -->
+    </div>
+ 
+</div>
+</div>
+</div>
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-6 img-portfolio">
-               
-                    <img class="img-responsive img-hover" src="install5.jpg" alt="">
-               
-            </div>
-            <div class="col-md-6 img-portfolio">
-              
-                    <img class="img-responsive img-hover" src="install6.jpg" alt="">
-                
-            </div>
-        </div>
-        <!-- /.row -->
 
+
+
+      
         <hr>
 
        
