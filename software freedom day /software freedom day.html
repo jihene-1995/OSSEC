@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Software freedom day</title>
+    <title>Software Freedom Day</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,12 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="2/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+    <script src="2/thumbnail-slider.js" type="text/javascript"></script>
+    <link href="css/install.css" rel="stylesheet">
+     <script src="js/install.js" type="text/javascript"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,8 +32,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
- <style> 
+    <style> 
   .pied {
     font-weight: bold;
     max-width: 100%;
@@ -35,17 +40,39 @@
     font-size: 0.7em;
     text-align:center ;
 }
+
+    .video-section .pattern-overlay {
+background-color: #ADD8E6;
+padding: 20px 0 20px;
+min-height: 20px; 
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:      #4169E1;
+}
+.video-section h1{
+font-size:40px;
+font-family:1  fantasy;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
 </style>
 
 </head>
 
-<bodY style="background: #B0E0E6">
+<bodY style="background:        #ADD8E6">
 
    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="container">
+              <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -123,69 +150,91 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
+    </nav>
+    <div>
+        <!-- /.container -->
 
         </div>
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
+    <section class="content-section video-section">
+  <div class="pattern-overlay">
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=fdJc1_IBKJA',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}"></a>
     <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+       <h1> <img src="12.png" width="80px">Open Source Softawre Ensi Club<img src="12.png" width="80px"></h1>  
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<br>
+
+<div class="container">
+  <div class="row transparent" style="background:   #4682B4">
+    <div class="col-md-12">
+          <div class="tuyin first" style="margin-left: 14px"> 
+            <span class="title" style="color:       #B8860B"><b>Software Freedom Day</b></span>
+             <div class="plan-name"><b>Discover what you can do with free software !</b></div>
+              <div class="text">
+                <p><strong>This day is an opportunity to campaign for the recognition of the social dimension of free software and to introduce the public to free software on a global scale, through its personal use, in education, economy or by governments .. This is a major event of the free software movement supported by the Free Software Foundation with the use of its LibrePlanet community platform.</strong></p><br>
+                <p style="text-align: center"><img src="sfd1.jpg" width="400px"></p>
+              </div>
+           
+          </div>
+        
+
+    <!-- Page Content -->
+  
 
         <!-- Page Heading/Breadcrumbs -->
-         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header" style="text-align: center"> <img src="icon.png" width="200px"> <strong style="color:#152588" ><span style="font-size:50px">Software Freedom day </span></strong><img src="icon.png" width="200px">
-                </h1>              
+     
+     
+
+
+
+ <div style="padding:120px 0;">
+        <div id="thumbnail-slider">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a class="thumb" href="sfd7.jpg" />
+                    </li>
+                    <li>
+                        <a class="thumb" href="sfd2.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="sfd3.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="sfd4.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="sfd5.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="sfd6.jpg"></a>
+                    </li>
+                   
+                </ul>
             </div>
         </div>
-        <!-- /.row -->
-        <h2 style="text-align: center"><b> Discover what you can do with free software !</b></h2>
-    <p style="text-align: center"> <b>This day is an opportunity to campaign for the recognition of the social dimension of free software and to introduce the public to free software on a global scale, through its personal use, in education, economy or by governments .. This is a major event of the free software movement supported by the Free Software Foundation with the use of its LibrePlanet community platform.</b></p>
-    <br>
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 img-portfolio">
-                
-                    <img class="img-responsive img-hover" src="sfd2.jpg" alt="">
-             
-            
-            </div>
-            <div class="col-md-4 img-portfolio">
-               
-                    <img class="img-responsive img-hover" src="sfd5.jpg" alt="" >
-               
-            </div>
-            <div class="col-md-4 img-portfolio">
-               
-                    <img class="img-responsive img-hover" src="sfd6.jpg" alt="">
-               
-            </div>
-        </div>
-        <!-- /.row -->
+    </div>
+ 
+</div>
+</div>
+</div>
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 img-portfolio">
-               
-                    <img class="img-responsive img-hover" src="sfd3.jpg" alt="">
-                
-               
-            </div>
-            <div class="col-md-4 img-portfolio">
-                
-                    <img class="img-responsive img-hover" src="sfd4.jpg" alt="">
-               
-            </div>
-            <div class="col-md-4 img-portfolio">
-               
-                    <img class="img-responsive img-hover" src="sfd7.jpg" alt="">
-               
-            </div>
-        </div>
 
-       
 
-       <hr>
+
+      
+        <hr>
 
        
 
@@ -198,7 +247,6 @@
 
     </div>
     <!-- /.container -->
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
